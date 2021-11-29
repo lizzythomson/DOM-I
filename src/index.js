@@ -57,3 +57,15 @@ navItems.forEach((item, index) => {
 const companyLogo = document.querySelector("#logo-img");
 
 companyLogo.src = "../src/mocks/img/logo.png";
+
+const headerContent = document.querySelector(".cta-text");
+
+const headerTitle = headerContent.querySelector("h1");
+const headerButton = headerContent.querySelector("button");
+
+headerTitle.textContent = siteContent.cta["h1"];
+headerButton.textContent = siteContent.cta["button"];
+
+const headerImg = document.querySelector("#cta-img");
+
+headerImg.src = "../src/mocks/img/cta.png";
