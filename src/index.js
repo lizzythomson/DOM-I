@@ -50,7 +50,7 @@ console.log("project wired!");
 const navItems = document.querySelectorAll("header a");
 
 navItems.forEach((item, index) => {
-  item.className = "Italic";
+  item.className = "italic";
   item.textContent = siteContent.nav[`nav-item-${index}`];
 });
 
@@ -69,3 +69,45 @@ headerButton.textContent = siteContent.cta["button"];
 const headerImg = document.querySelector("#cta-img");
 
 headerImg.src = "../src/mocks/img/cta.png";
+
+const mainTopContent = document.querySelector(".text-content");
+
+// mainTopContent.forEach((item) => item.textContent === )
+
+const contactSection = document.querySelector(".contact");
+
+const contactTitle = contactSection.querySelector("h4");
+
+contactTitle.textContent = siteContent.contact["contact-h4"];
+
+const contactAddress = contactSection.querySelector("p:nth-of-type(1)");
+const contactPhone = contactSection.querySelector("p:nth-of-type(2)");
+const contactEmail = contactSection.querySelector("p:nth-of-type(3)");
+
+contactAddress.textContent = siteContent.contact.address;
+contactPhone.textContent = siteContent.contact.phone;
+contactEmail.textContent = siteContent.contact.email;
+
+const footerContent = document.querySelector("footer");
+
+const footerCopyright = footerContent.querySelector("a");
+
+footerCopyright.className = "bold";
+
+footerContent.textContent = siteContent.footer.copyright;
+
+{
+  /* <section class="contact">
+        <h4></h4>
+        <p></p>
+        <p></p>
+        <p></p>
+      </section>
+
+<section class="contact">
+<h4>Contact</h4>
+<p>123 Way 456 Street Somewhere, USA</p>
+<p>1 (888) 888-8888</p>
+<p>sales@greatidea.io</p>
+</section> */
+}
