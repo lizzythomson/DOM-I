@@ -70,9 +70,25 @@ const headerImg = document.querySelector("#cta-img");
 
 headerImg.src = "../src/mocks/img/cta.png";
 
-const mainTopContent = document.querySelector(".text-content");
+const mainh4Titles = document.querySelectorAll(".main-content h4");
 
-// mainTopContent.forEach((item) => item.textContent === )
+mainh4Titles[0].textContent = siteContent["main-content"]["features-h4"];
+mainh4Titles[1].textContent = siteContent["main-content"]["about-h4"];
+mainh4Titles[2].textContent = siteContent["main-content"]["services-h4"];
+mainh4Titles[3].textContent = siteContent["main-content"]["product-h4"];
+mainh4Titles[4].textContent = siteContent["main-content"]["vision-h4"];
+
+const mainParagraphs = document.querySelectorAll(".main-content p");
+
+mainParagraphs[0].textContent = siteContent["main-content"]["features-content"];
+mainParagraphs[1].textContent = siteContent["main-content"]["about-content"];
+mainParagraphs[2].textContent = siteContent["main-content"]["services-content"];
+mainParagraphs[3].textContent = siteContent["main-content"]["product-content"];
+mainParagraphs[4].textContent = siteContent["main-content"]["vision-content"];
+
+const middleImage = document.querySelector("#middle-img");
+
+middleImage.src = "../src/mocks/img/accent.png";
 
 const contactSection = document.querySelector(".contact");
 
@@ -95,19 +111,3 @@ const footerCopyright = footerContent.querySelector("a");
 footerCopyright.className = "bold";
 
 footerContent.textContent = siteContent.footer.copyright;
-
-{
-  /* <section class="contact">
-        <h4></h4>
-        <p></p>
-        <p></p>
-        <p></p>
-      </section>
-
-<section class="contact">
-<h4>Contact</h4>
-<p>123 Way 456 Street Somewhere, USA</p>
-<p>1 (888) 888-8888</p>
-<p>sales@greatidea.io</p>
-</section> */
-}
